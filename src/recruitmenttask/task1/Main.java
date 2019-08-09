@@ -7,7 +7,7 @@ import java.util.Set;
 public class Main {
 
     public static void main(String[] args) {
-        String string = InputText.textFromconsole("please enter text(any non-letter characters will be ignored!!!)").trim();
+        String string = InputText.textFromconsole("please enter text(any non-letter characters will be ignored!!!)");
         Set<String> lettersInText = new HashSet<>(Arrays.asList(string.replaceAll("\\s", "").split("")));
         Set<String> nonrepeatingWordsInText = new HashSet<>(Arrays.asList(string.split(" ")));
         for (String s: lettersInText) {
